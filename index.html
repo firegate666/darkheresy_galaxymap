@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<head>
+	<title>Dark Heresy - Mapfinder</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection, print" />
+
+	<script src="jquery-1.2.6.min.js" type="text/javascript"></script>
+	<script src="jquery-ui-personalized-1.6rc2.min.js" type="text/javascript"></script>
+	<script src="aqLayer.js" type="text/javascript"></script>
+	<script src="main.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div id="wrapper">
+
+	<div id="map"></div>
+
+	<div id="infolayer" style="display:none"><div class="inner">&nbsp;</div></div>
+
+	<div id="editlayer" style="display:none">
+		<div class="inner">
+			<h3>Neuer Planet</h3>
+			<p>Name: <input type="text" id="name"/><br/>
+				x1, y1: <input type="text" id="pos_x" size="4"/>, <input type="text" id="pos_y" size="4"/><br/>
+				x2, y2: <input type="text" id="pos_x2" size="4"/>, <input type="text" id="pos_y2" size="4"/><br/>
+				Typ: <select id="type">
+					<optgroup label="Imperial Controlled">
+						<option>Hive World</option>
+						<option>Shrine World</option>
+						<option>Agri-world</option>
+						<option>Feudal World</option>
+						<option>Feral World</option>
+						<option>Pleasure World</option>
+						<option>Penal World</option>
+						<option>Mining World</option>
+						<option>Forge World</option>
+						<option>Cemetary World</option>
+						<option>Frontier World</option>
+						<option>Special</option>
+					</optgroup>
+					<optgroup label="Non Imperium">
+						<option>Fordbidden World</option>
+						<option>Dead World</option>
+						<option>Gas Giant</option>
+						<option>Death World</option>
+					</optgroup>
+					<optgroup label="Special">
+						<option>War World</option>
+						<option>Unclassified</option>
+					</optgroup>
+				</select><br/>
+				<input type="button" value="Speichern" onclick="saveData()"/>
+			</p>
+		</div>
+	</div>
+
+
+
+</div>
+
+<div id="marker"></div>
+
+<script type="text/javascript">
+    alert('Click on a planet for more details');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#navigation {
+	display: none;
+}
+
+#map {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: url(map.jpg) no-repeat;
+	height: 1037px;
+	width: 1600px;
+}
+
+.inner {
+	margin: 5px;
+}
+
+#marker {
+	background: none;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 0px;
+	outline: 1px solid red;
+	position: absolute;
+}
